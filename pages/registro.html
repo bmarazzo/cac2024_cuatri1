@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mundo Beatlina | Albumes y mas de los Beatles</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+        <header>
+            <nav>
+                <a href="#">
+                  <img src="../assets/img/logo_escucha.png" alt="logo imagen" width="100" loading="lazy">
+                 </a>
+                  <ul>
+                     
+                     <li>
+                       <a href="#masescuchados">Mas escuchados</a>
+                     </li>
+                     <li>
+                       <a href="./pages/registro.html">Registro</a>
+                     </li>
+                     <li>
+                       <a href="./pages/iniciosesion.html">Entrar</a>
+                     </li>
+                    
+                  </ul>
+              </nav>
+
+            </nav>
+        </header>
+        <main>
+         
+            <h1>Registro</h1>
+            <form action="validar.php" method="post">
+              <div>
+                <label for="name">Ingrese su Nombre:</label>
+                <input type="text" name="nombre" id="name" placeholder="Nombre" required>
+              </div>
+              <div>
+                <label for="apellido">Ingrese su apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+              </div>
+              <div>
+                <label for="email">Ingrese su email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+              </div>
+              <div>
+                <label for="password">Ingrese su contraseña:</label>
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+              </div>
+              <div>
+                <label for="">Ingrese su fecha de nacimiento:</label>
+                <input type="date" name="nacimiento" id="nacimiento">
+              </div>
+              <div>
+                <label for="">Ingrese País:</label>
+                <select name="pais" id="pais" size="3" multiple>
+                  <option value="AR">Argentina</option>
+                  <option value="BR" selected>Brasil</option>
+                  <option value="CL">Chile</option>
+                  <option value="UY">Uruguay</option>
+                </select>
+              </div>
+              <div>
+                <label for="terminos">Acepte terminos y condiciones</label>
+                <!--<input type="radio" value="1" name="terminos">SI
+                <input type="radio" value="2" name="terminos"><NO-->
+                <input type="checkbox" name="terminos" id="terminos" required>
+                
+              </div>
+              <div>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Comentario"></textarea>
+              </div>
+             <div>
+              <input type="reset">
+              <input type="submit" value="Registrarme">
+              
+             </div>
+              
+
+            </form>
+           
+        </main>
+        <footer>
+            <nav>
+              <ul>
+                <li>
+                  <a href="">Terminos y Condiciones</a>
+                </li>
+                <li>
+                  <a href="">Ayuda</a>
+                </li>
+                <li>
+                  <a href="">FAQs</a>
+                </li>
+                <li>
+                  <a href="">Administrador de Discos</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="#principal">
+              <i class="fa-solid fa-arrow-up"></i>
+            </a>
+           
+        </footer>
+        
+    </body>
+</html>

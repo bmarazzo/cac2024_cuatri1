@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #887c9a #121111;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #121111;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #824d74;
+    border-radius: 10px;
+    border: 3px none #ffffff;
+  }
+
+/* reset de parámetros */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work+Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right top, #824d74, #915374, #9e5b73, #a96472, #b36d72, #bd7573, #c67e74, #cf8775, #dc9077, #e79a79, #f3a47a, #fdaf7b);
+
+}
+
+/*generales*/
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;  
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+p {
+    font-size: 1.2rem;            
+    padding-bottom: 10px;
+    line-height: 2;
+}
+
+hr {
+    height: 10px;
+    background-color: black;
+  }
+
+/*estilo de la cabecera escritorio*/
+.header{
+    background-color: #887c9a;
+    position:sticky;
+    top: 0;
+    height: 15vh;
+    z-index:10;
+    .nav_header{
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        a {            
+            text-decoration: none;
+            font-size: 1.4rem;
+            justify-content: center;
+            color: black;
+            font-weight: 800;
+            padding: 15px;
+            /* ver por que no se centra verticalmente*/
+        }
+        .lista_nav{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            .lista_items{
+                margin-right:20px;
+                .link_nav{
+                    text-decoration: none;
+                    border: solid;
+                    border-radius: 83px 83px 83px 83px;
+                    color:#0c0b0b;
+                    font-weight: 700;
+                    font-size: 1.1rem;                    
+                    padding: 0.5rem 1rem;
+                    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+                }
+            }        
+        }
+        
+    }
+}
+
+/*estilo de la seccion principal escritorio*/
+
+.main{
+    .resumen_historia {
+        color: white;
+        background:linear-gradient(to bottom, #000000, #00000048),url("../assets/img/back_ground_resumen_gr.jpg");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+       }
+       h2{
+        margin-bottom: 30px;
+       }
+        div{
+            ul{
+                li{
+                    a{
+                        text-decoration: none;
+                        border: solid;
+                        color: black;
+                        border-radius: 83px 83px 83px 83px;
+                        background-color: #887c9a;
+                        color:#0c0b0b;
+                        font-weight: 700;
+                        font-size: 1.1rem;                    
+                        padding: 0.5rem 1rem;
+                        box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.75);
+                    }
+                }
+            }
+        }
+    }
+
+.buscador {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        input{
+            border: 2px solid rgb(10, 10, 10);
+            border-radius: 25px;
+            color: #000000;
+            font-size: 1.2rem;
+            height: 35px;
+            margin: 5px 0px;
+            padding: 0px 20px;
+        }
+                    
+    }
+
+.mas_escuchadas{
+    width: 80%;
+    margin: 0 auto;
+    h2 {
+        margin-top: 20px 0;
+    }
+    .galeria_tendencias{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-wrap: wrap;
+        div {
+            width: 300px;
+            height: 300px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+                box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.69);
+            }
+        }
+        
+    }
+}
+
+/*Estila de los 3 mejores segun Beatlina*/
+
+
+.mejores_beatlina{
+    width: 80%;
+    margin: 20px auto;
+
+    h2 {
+        margin-top: 20px 0;
+    }
+    .galeria_mejores{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-wrap: wrap;
+        div {
+            width: 300px;
+            height: 300px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+                box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.69);
+            }
+        }
+        
+    }
+}
+
