@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
 
 
 /* ===== Scrollbar CSS ===== */
@@ -30,7 +30,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Work+Sans', sans-serif;
+    /* font-family: "Seymour One", sans-serif; */
+    font-family: "Montserrat", sans-serif; 
+    /* font-family: "Work+Sans", sans-serif; */
 }
 
 
@@ -48,12 +50,6 @@ h1 {
 h2 {
     font-size: 1.5rem;
     text-align: center;
-}
-
-p {
-    font-size: 1.2rem;            
-    padding-bottom: 10px;
-    line-height: 2;
 }
 
 hr {
@@ -74,18 +70,20 @@ hr {
         height: 100%;
         justify-content: space-between;
         a {            
+            display: flex;
+            align-items: center;
             text-decoration: none;
             font-size: 1.4rem;
-            justify-content: center;
             color: black;
-            font-weight: 500;
-            padding: 15px;
-            /* ver por que no se centra verticalmente*/
+            font-weight:800;
+            padding: 15px;            
         }
+
         .lista_nav{
             list-style: none;
             display: flex;
             align-items: center;
+            
             .lista_items{
                 margin-right:20px;
                 .link_nav{
@@ -97,6 +95,7 @@ hr {
                     font-size: 1.1rem;                    
                     padding: 0.5rem 1rem;
                     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                    
 
                 }
             }        
@@ -109,13 +108,11 @@ hr {
 
 .main{
     .principal {
-        color: white;
+        color: white;        
         background:linear-gradient(to bottom, #000000, #00000048),url("../assets/img/back_ground_resumen_gr.jpg");
         background-position: center;
         background-size: cover;
         display: flex;
-        align-items: center;
-        justify-content: center;
         text-align: center;
         padding: 30px;        
        }
@@ -124,6 +121,7 @@ hr {
        }
         div{
             ul{
+                list-style: none;
                 li{
                     a{
                     text-decoration: none;
@@ -168,30 +166,29 @@ hr {
     .galeria_tendencias{
         display: flex;
         justify-content: space-evenly;
-        gap: 20px;
         flex-wrap: wrap;
+        gap: 50px;
         margin-bottom: 50px;
         div {
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 border-radius: 15px;
-                box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.69);
+                box-shadow: 10px 10px 13px 5px rgba(0,0,0,0.9);
             }
         }
         
     }
 }
 
-/*Estila de los 3 mejores segun Beatlina*/
-
+/*Estilo de los 3 mejores segun Beatlina*/
 .mejores_beatlina{
     width: 80%;
-    margin: 20px auto;
-
+    margin: 0 auto;
+    margin-bottom: 50px;
     h2 {
         margin-top: 20px 0;
     }
@@ -201,23 +198,28 @@ hr {
         gap: 20px;
         flex-wrap: wrap;
         div {
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 border-radius: 15px;
-                box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.69);
+                box-shadow: 10px 10px 13px 5px rgba(0,0,0,0.9);
             }
         }
         
     }
 }
 
+
+/*Estilo para películas */
+
 .las_pelis{
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
+
+
     h2 {
         margin-top: 20px 0;
     }
@@ -232,7 +234,9 @@ hr {
                 height: 500px;
                 object-fit: cover;
                 border-radius: 15px;
-                box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.69);
+                box-shadow: 10px 10px 13px 5px rgba(0,0,0,0.9);
+                margin-bottom: 50px;
+
             }
 }
 footer{
@@ -252,7 +256,7 @@ footer{
                     border: 1px solid rgb(10, 10, 10);
                     border-radius:5px;
                     color:#000000;
-                    font-weight: 100;
+                    font-weight: 300;
                     font-size: 0.8rem;                    
                     padding: 0.5rem 1rem;
                     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -261,3 +265,77 @@ footer{
     }
     }
 }
+
+
+
+/*pagina no principales */
+
+/*Estilo para pagina de registro */
+
+main {
+    .registrarse {
+        color: white;
+        background:linear-gradient(to bottom, #000000, #00000048),url("../assets/img/fondo_registro.png");
+        margin:0 auto;
+        border-radius: 5px;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        font-size:1.2rem;
+    }
+        .tituloRegistrarse{
+            background: (to bottom, #dff4f2, #c9e3e1, #b3d3d0, #9dc3bf, #87b3af);   
+            text-align: center;
+
+        }
+            /*sacar tilde al input aceptar terminos.*/        
+            form{
+                width: 30%;
+                padding:40px;
+                input:not(.check,.boton),select{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    height: 40px;
+                    padding: 0px 20px;
+                    font-size: 1.2rem;
+                    border-radius: 10px;
+                    border: 2px solid #040404;
+                    background-color: #333333;
+                    outline: none;
+                    color:white;
+            }
+                .terminos{
+                    font-size: 0.8rem;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .textoCheck{
+                        margin-left: 10px;
+                }
+                }
+                .boton{
+                    width: 87%;
+                    box-sizing: content-box;
+                    background-image: linear-gradient(to bottom, #dff4f2, #c9e3e1, #b3d3d0, #9dc3bf, #87b3af);
+                    border: 2px solid #040404;
+                    color: #040404;
+                    padding: 1rem 1rem;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                
+                }
+                .ayuda{
+                    margin-top:40px;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    color: #787878;
+                    font-weight:400;
+                
+                }
+            }
+        
+        }
