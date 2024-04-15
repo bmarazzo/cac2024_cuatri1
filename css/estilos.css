@@ -343,15 +343,25 @@ main {
 
 /*Estilo para paginas detalles*/
 
-.detalle {
-    display: flex;
+
+
+main {
+    .detalle {
+        display: flex;
+        text-align: justify;
+        h1 {
+            padding: 30px;
+        }    
+        div {
+                padding: 30px; 
+            }
+        }
+            .video {       
+                width: 500;
+                height: 350;
+            }   
 }
 
-.video {
-    width: 50%;
-    justify-content: center;
-    
-}
 
 
 /*ARRANCADO CON MEDIA QUERIES*/
