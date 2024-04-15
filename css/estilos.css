@@ -339,3 +339,19 @@ main {
             }
         
         }
+
+
+/*Estilo para paginas detalles*/
+
+.detalle {
+    display: flex;
+}
+
+.video {
+    width: 50%;
+    justify-content: center;
+    
+}
+
+
+/*ARRANCADO CON MEDIA QUERIES*/
