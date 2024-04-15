@@ -345,23 +345,24 @@ main {
 
 
 
-main {
+.detalle_principal {
+    height: 100vh;
     .detalle {
         display: flex;
         text-align: justify;
-        h1 {
-            padding: 30px;
-        }    
-        div {
-                padding: 30px; 
-            }
         }
-            .video {       
-                width: 500;
-                height: 350;
-            }   
+        h1 {
+            padding-bottom: 15px;
+            }
+            div {
+                padding: 30px; 
+                }
+                p {
+                line-height: 25px;
+                }        
+                   
 }
 
 
 
-/*ARRANCADO CON MEDIA QUERIES*/
+/*ARRANCAR CON MEDIA QUERIES*/
