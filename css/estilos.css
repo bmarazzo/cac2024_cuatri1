@@ -343,25 +343,36 @@ main {
 
 /*Estilo para paginas detalles*/
 
-
-
-main {
-    .detalle {
-        display: flex;
-        text-align: justify;
-        h1 {
-            padding: 30px;
-        }    
-        div {
-                padding: 30px; 
-            }
-        }
-            .video {       
-                width: 500;
-                height: 350;
-            }   
+.contenedor_general_detalle {
+    display: flex;
+    justify-content: space-between;
 }
 
+.video_detalle {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    padding-left: 50px;
+
+    }
+
+iframe {    
+    width: 560px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.tit_detalle {
+    padding-bottom: 30px;
+}
+
+
+.texto_detalle {
+        padding: 50px;
+        line-height: 35px;
+        max-width: 65%;
+        text-align: justify;
+    }
 
 
 /*ARRANCAR CON MEDIA QUERIES*/
