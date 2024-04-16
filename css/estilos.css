@@ -344,30 +344,24 @@ main {
 /*Estilo para paginas detalles*/
 
 
-.contenedor_general { 
-    display: flex;
-    flex-direction: column;
-    h1 {
-        padding-bottom: 30px;
-        }
-        p {
-            line-height: 30px;
-            text-align: justify;
-        }
-            .contenedor_detalle { 
-                margin: 30px;
-                display: flex;
+
+main {
+    .detalle {
+        display: flex;
+        text-align: justify;
+        h1 {
+            padding: 30px;
+        }    
+        div {
+                padding: 30px; 
             }
-                .contenedor_video {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                iframe {
-                    padding-left: 30px;
-                }
-}
+        }
+            .video {       
+                width: 500;
+                height: 350;
+            }   
 }
 
 
 
-/*ARRANCADO CON MEDIA QUERIES*/
+/*ARRANCAR CON MEDIA QUERIES*/
