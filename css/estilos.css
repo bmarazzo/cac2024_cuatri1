@@ -108,15 +108,14 @@ hr {
 @media (max-width: 768px) {
     .header{
         height: initial;
-        margin-bottom: 20px;
+        padding-bottom: 15px;
         .nav_header{
-            flex-direction: column;                   
+            flex-direction: column;            
             a {            
-                margin: 10px;
+                margin: 3px;
             }
                 .lista_nav{
                     flex-direction: column;
-                    
                 }    
                 
             }
@@ -277,8 +276,6 @@ hr {
 .las_pelis{
     width: 80%;
     margin: 0 auto;
-
-
     h2 {
         margin-top: 20px 0;
     }
@@ -298,6 +295,8 @@ hr {
 
             }
 }
+
+
 footer{
     height: 10vh;
     nav {
@@ -325,6 +324,20 @@ footer{
     }
 }
 
+@media (max-width: 768px) {
+    footer{
+            height: initial;    
+            }   
+            nav {
+                display: flex;
+                justify-content: center;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;         
+                }
+            }
+}
 
 
 /*pagina no principales */
