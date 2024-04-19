@@ -103,6 +103,25 @@ hr {
         
     }
 }
+/* media queries del header*/
+
+@media (max-width: 768px) {
+    .header{
+        height: initial;
+        margin-bottom: 20px;
+        .nav_header{
+            flex-direction: column;                   
+            a {            
+                margin: 10px;
+            }
+                .lista_nav{
+                    flex-direction: column;
+                    
+                }    
+                
+            }
+        }
+}
 
 /*estilo de la seccion principal escritorio*/
 
@@ -139,6 +158,20 @@ hr {
         }
     }
 
+/* media queries seccion principal*/
+@media (max-width: 768px) {
+    .main {
+        h1 {
+        font-size: 20px;
+        padding: 0;
+        }
+        h2 {
+            font-size: 15px;
+        }
+    }
+}
+
+
 
     /*aca va el estilo del boton del buscar principal*/
     .buscador_principal {
@@ -163,6 +196,25 @@ hr {
             }
                     
     }
+
+/* media queries buscador principal*/
+@media (max-width: 768px) {
+    .buscador_principal {
+        h2 {
+            font-size: 15px;
+        }
+        .formulario_principal {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+            
+                    
+    }
+}
+
+
 
 .los_discos{
     width: 80%;
