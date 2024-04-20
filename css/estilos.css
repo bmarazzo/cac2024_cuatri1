@@ -296,6 +296,17 @@ hr {
             }
 }
 
+/* reponsive para imagenes de las pelis*/
+@media (max-width: 768px) {
+    .las_pelis{
+        img {
+            width: 300px;
+            height: 400px;                    
+        }
+    }
+
+}
+
 
 footer{
     height: 10vh;
@@ -343,9 +354,7 @@ footer{
 /*pagina no principales */
 
 /*Estilo para pagina de registro */
-
 main{
-   
     .registrarse {
         color: white;
         background:linear-gradient(to bottom, #000000, #00000048),url("../assets/img/fondo_registro.png");
@@ -413,38 +422,65 @@ main{
         }
 
 
+/*responsive para de registro*/
+@media (max-width: 768px) {
+    main{
+        .registrarse {
+            form{
+               width: 75%;
+            }
+        }
+}
+}
 /*Estilo para paginas detalles*/
+.contenedor_detalle {
+    .contenedor_general_detalle {
+        display: flex;
+        justify-content: space-between;
+        }
+        .tit_detalle {
+            padding-bottom: 30px;
+        }
+            .texto_detalle {
+                padding: 50px;
+                line-height: 35px;
+                max-width: 65%;
+                text-align: justify;
+            }
+                .video_detalle {
+                    display: flex;
+                    align-items: center;    
+                    justify-content: center;
+                    padding-left: 50px;
+                }
+                    iframe {    
+                       width: 560px;
+                       height: 350px;
+                       border-radius: 15px;
+                    }
+       }
 
-.contenedor_general_detalle {
-    display: flex;
-    justify-content: space-between;
-}
-
-.video_detalle {
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-    padding-left: 50px;
-
-    }
-
-iframe {    
-    width: 560px;
-    height: 350px;
-    border-radius: 15px;
-}
-
-.tit_detalle {
-    padding-bottom: 30px;
-}
-
-
-.texto_detalle {
-        padding: 50px;
-        line-height: 35px;
-        max-width: 65%;
-        text-align: justify;
-    }
-
-
-/*ARRANCAR CON MEDIA QUERIES*/
+/*responsive para detalle*/
+@media (max-width: 768px) {
+    .contenedor_detalle {
+        .contenedor_general_detalle {
+            display: initial;
+            }
+            .tit_detalle {
+                display: initial;
+            }
+                .texto_detalle {
+                    padding: 10px;
+                    line-height: 35px;
+                    max-width: 100%;
+                    text-align: justify;
+                }
+                    .video_detalle {
+                        padding-left: 0;                        
+                    }
+                        iframe {    
+                           width: 460px;
+                           height: 250px;                           
+                        }
+           }
+        }    
