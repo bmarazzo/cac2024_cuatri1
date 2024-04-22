@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mundo Beatlina | Albumes y mas de los Beatles</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mundo Beatlina | Albumes y mas de los Beatles</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/estilos.css">
-</head>
+    <body class="bg-secondary text-white">
 
-<body>
+      <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">                
+                <i class="fas fa-headphones-alt"></i>
+                <span>Mundo Beatlina</span>                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end gap-3">
+                <li class="nav-item border border-1 rounded">
+                  <a class="nav-link" href="#">Los TOP</a>
+                </li>
+                <li class="nav-item border border-1 rounded">
+                  <a class="nav-link" href="./pages/iniciosesion.html">Entrar</a>
+                </li>
+                <li class="nav-item border border-1 rounded">
+                  <a class="nav-link" href="./pages/registro.html">Registrarse</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </header>
 
-  <header class="header">
-    <nav class="nav_header">
-
-      <a href="../index.html">
-        <i class="fas fa-headphones-alt"></i>
-        <span>Mundo Beatlina</span>
-      </a>
-
-      <ul class="lista_nav">
-        <li class="lista_items"><a class="link_nav" href="#TOPS">Los TOP</a></li>
-        <li class="lista_items"><a class="link_nav" href="./iniciosesion.html">Entrar</a></li>
-        <li class="lista_items"><a class="link_nav" href="#">Registrate</a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main">
-
-    <section class="registrarse">
-      <h1 class="tituloRegistrarse">Registro</h1>
-      <form action="" method="post">
-
-
-        <div>
-          <input type="text" placeholder="Nombre" required id="nombre" name="nombre">
-        </div>
-
-        <div>
-          <input type="text" placeholder="Apellido" required id="apellido" name="apellido">
-        </div>
-
-        <div>
-          <input type="email" placeholder="Email" required id="email" name="email">
-        </div>
-
-        <div>
-          <input type="password" placeholder="Contraseña" required id="password" name="password">
-        </div>
-
-        <div>
-          <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" required id="fechaNacimiento"
-            name="fechaNacimiento">
-        </div>
-
-        <div>
-          <select name="pais" id="pais">
-            <option value="">País</option>
-            <option value="AR">Argentina</option>
-            <option value="BO">Bolivia</option>
-            <option value="BR">Brasil</option>
-          </select>
-        </div>
-        <div class="terminos">
-          <input class="check" type="checkbox" id="terminos">
-          <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
-        </div>
-        <div>
-          <input class="boton" type="submit" value="Registrarse">
-        </div>
-
-        <div>
-          <a class="ayuda" href="#">¿Necesitas ayuda?</a>
-        </div>
-      </form>
-    </section>
-
-  </main>
+  <main>
+    <section class="w-25">
+      <h1 class="text-center m5">Registro</h1>
+    <form>
+      <div class="form-floating mb-3 text-dark">
+        <input type="password" class="form-control" id="floatingNombre" placeholder="Nombre" name="nombre">
+        <label for="nombre">Nombre</label>
+      </div>
+      <div class="form-floating mb-3 text-dark">
+        <input type="password" class="form-control" id="apellido" placeholder="Apellido">
+        <label for="apellido">Apellido</label>
+      </div>
+      <div class="form-floating mb-3 text-dark">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Direccion de Email</label>
+      </div>      
+      <div class="form-floating mb-3 text-dark">
+        <input type="date" class="form-control" id="floatingPassword" pplaceholder="Fecha de Nacimiento (dd/mm/aaaa)" required id="fechaNacimiento">
+        <label for="fecha">Fecha de Nacimiento</label>
+      </div>
+      <div class="form-floating mb-3 text-dark">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option selected>País</option>
+        <option value="AR">Argentinane</option>
+        <option value="BO">Boliviao</option>
+        <option value="BR">Brasil</option>
+      </select>
+    </form>
+  </section>
+</main>
 
   <footer>
-    <nav>
-      <div>
-        <ul>
-          <li><a href="">Terminos y Condiciones</a></li>
-          <li><a href="">FAQs</a></li>
-          <li><a href="">Administrador de Discos</a></li>
-        </ul>
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center gap-3">
+            <li class="nav-item border border-1 rounded">
+              <a class="nav-link" href="#">Terminos y Condiciones</a>
+            </li>
+            <li class="nav-item border border-1 rounded">
+              <a class="nav-link" href="./pages/iniciosesion.html">FAQs</a>
+            </li>
+            <li class="nav-item border border-1 rounded">
+              <a class="nav-link" href="./pages/registro.html">Administrador de Discos</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </footer>
