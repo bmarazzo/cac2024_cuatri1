@@ -6,152 +6,179 @@
         <title>Mundo Beatlina | Albumes y mas de los Beatles</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
     </head>
     
-    <body>
+    <body class="bg-secondary text-white">
 
-        <header class="header">
-          <nav class="nav_header">
-
-              <a href="#">
-                <i class="fas fa-headphones-alt"></i>
-                <span>Mundo Beatlina</span>
+        <header class="sticky-top">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">                
+                  <i class="fas fa-headphones-alt"></i>
+                  <span>Mundo Beatlina</span>                
               </a>
-
-                <ul class="lista_nav">                   
-                   <li class="lista_items"><a class="link_nav" href="#TOPS">Los TOP</a></li>
-                   <li class="lista_items"><a class="link_nav" href="./pages/iniciosesion.html">Entrar</a></li>
-                   <li class="lista_items"><a class="link_nav" href="./pages/registro.html">Registrate</a></li>
-
-                 </ul>
-            </nav>
-       
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end gap-3">
+                  <li class="nav-item border border-1 rounded">
+                    <a class="nav-link" href="#">Los TOP</a>
+                  </li>
+                  <li class="nav-item border border-1 rounded">
+                    <a class="nav-link" href="./pages/iniciosesion.html">Entrar</a>
+                  </li>
+                  <li class="nav-item border border-1 rounded">
+                    <a class="nav-link" href="./pages/registro.html">Registrarse</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
           </header>
 
-          <main class="main">
-            <section class="principal">
-              <div>
+          <main>
+            <section class="text-center">
+              <div class="mt-5">
                 <h1>Los discos y las péliculas de <i>Los Beatles</i> en un solo lugar</h1>
 
-                <h2>Disfruta donde y cuando quieras.</h2>
+                <h2 >Disfruta donde y cuando quieras.</h2>
                 
                 <div>
                   <ul>
-                    <li><a href="./pages/registro.html">Registrate</a></li>
+                    <li class="mt-5"><a class="btn btn-dark" href="./pages/registro.html">Registrate</a></li>
                   </ul>
+                
                 </div>
             </section>
 
             
-            <section class="buscador_principal">
+            <section class="text-center p-3">
               <h2>¿Qué quieres hacer hoy? Escuchar o mirar, buscalo.</h2>
-  
-              <form class="formulario_principal" action="">
-                <input class="input_principal" type="text" placeholder="Buscar" id="buscar" name="buscar" required>
-                <input class="input_principal" type="submit" value="Buscar" id="btnBuscar" name="btnBuscar">
+              <h2>Escuchar o mirar, buscalo.</h2>
+
+              <form action="" class="mt-5">
+                <input class="btn btn-dark" type="text" id="buscar" name="buscar" required>
+                <input class="btn btn-dark" type="submit" value="Buscar" id="btnBuscar" name="btnBuscar">
               </form>
             </section>
         
        
           <hr>  
 
-          <section class="los_discos">
-            <h2>Los albumes de estudio</h2>
-            
-            <div class="galeria_tendencias">
-              <div>
-                <a href="./pages/detalle_1.html"><img src="./assets/img/1_please.png" alt="Please please me" loading="lazy"></a>
-              </div>
-              <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/2_with_the.png" alt="With the Beatles" loading="lazy"></a>
-              </div>
-              <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/3_hard.png" alt="A Hard Day's Night" loading="lazy"></a>
-              </div>
-               <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/4_for_sale.png" alt="Beatles for Sale" loading="lazy"></a>
-              </div>
-              <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/5_help.png" alt="Help" loading="lazy"></a>
-              </div>
-              <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/6_rubber.png" alt="Rubber Soul" loading="lazy"></a>
-              </div>
-              <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/7_revolver.png" alt="Revolver" loading="lazy"></a>
-              </div>
-              <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/8_pepper.png" alt="Sgt. Pepper's Lonely Hearts Club Band" loading="lazy"></a>
-              </div>
-              <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/9_magical.png" alt="Magical Mystery Tour" loading="lazy"></a>
-              </div>
-              <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/10_white.png" alt="White album" loading="lazy"></a>
-              </div>
-              <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/11_yellow.png" alt="Yellow Submarine" loading="lazy"></a>
-              </div>
-              <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/12_abbey.png" alt="Abbey Road" loading="lazy"></a>
-              </div>
-              <div>
-                <a href="./pages/detalle_1.html"></a><img src="./assets/img/13_letit.png" alt="Let It Be" loading="lazy"></a>
-              </div>
-            </div> 
+          <section>
+            <h2 class="text-center p-3">Los albumes de estudio</h2>
 
-          </section>
+            <div class="container">
+              <div class="row gap-5">
+                <div class="col">
+                  <a href="./pages/detalle_1.html"><img src="./assets/img/1_please.png" alt="Please please me" loading="lazy"></a>
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/2_with_the.png" alt="With the Beatles" loading="lazy"></a>
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/3_hard.png" alt="A Hard Day's Night" loading="lazy"></a>
 
-          <hr>
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/4_for_sale.png" alt="Beatles for Sale" loading="lazy"></a>
 
-        <section class="mejores_beatlina">
-          <h2>Los mejores albumes según Beatlina</h2>
-          <div class="galeria_mejores">
-              <div>
-                <img src="./assets/img/4_for_sale.png" alt="Beatles for Sale">
-              </div>
-              <div>
-                <img src="./assets/img/6_rubber.png" alt="Rubber Soul">
-              </div>
-              <div>
-                <img src="./assets/img/13_letit.png" alt="Let It Be">
-              </div>
-          </div>
-          
-        </section>
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/5_help.png" alt="Help" loading="lazy"></a>
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/6_rubber.png" alt="Rubber Soul" loading="lazy"></a>
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/7_revolver.png" alt="Revolver" loading="lazy"></a>
+
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/8_pepper.png" alt="Sgt. Pepper's Lonely Hearts Club Band" loading="lazy"></a>
+
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/9_magical.png" alt="Magical Mystery Tour" loading="lazy"></a>
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/10_white.png" alt="White album" loading="lazy"></a>
+
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/11_yellow.png" alt="Yellow Submarine" loading="lazy"></a>
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/12_abbey.png" alt="Abbey Road" loading="lazy"></a>
+                </div>
+                <div class="col">
+                  <a href="./pages/detalle_1.html"></a><img src="./assets/img/13_letit.png" alt="Let It Be" loading="lazy"></a>
+                </div>
+ 
         <hr>
-       
+    
 
       </section>
-      <section class="las_pelis">
-        <h2>Las películas</h2>
 
-        <div class="galeria_peliculas">
-          <div>
-            <a href="./pages/detalle_1.html"><img src="./assets/img/peli_1_Hard_Day.png" alt="A Hard Day's Night" loading="lazy"></a>
+      <section>
+        
+        <h2 class="text-center p-3">Las películas</h2>
+        
+        <div class="d-flex justify-content-evenly">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/img/peli_1_Hard_Day.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center text-dark">A Hard Day's Nigh: </h5>
+            <p class="card-title text-center text-dark">es una película británica de 1964 que sigue a The Beatles en un día caótico antes de un concierto, combinando comedia y música.</p>
+            <a href="#" class="btn btn-dark w-100 justify-content-center">Ver</a>
           </div>
-          <div>
-            <a href="./pages/detalle_1.html"></a><img src="./assets/img/peli_2_Help.png" alt="Help" loading="lazy"></a>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/peli_2_Help.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center text-dark">HELP!:</h5>
+            <p class="card-title text-center text-dark">es una película de 1965 protagonizada por The Beatles, donde se embarcan en una aventura global para proteger un anillo y evadir a una misteriosa secta oriental.</p>
+            <a href="#" class="btn btn-dark w-100 justify-content-center">Ver</a>
           </div>
-          <div>
-            <a href="./pages/detalle_1.html"></a><img src="./assets/img/peli_3_Yellow_Submarine.png" alt="Yellow Submarine" loading="lazy"></a>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/img/peli_3_Yellow_Submarine.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center text-dark">Yellow Submarine:</h5>
+            <p class="card-title text-center text-dark">es una película animada de 1968 protagonizada por The Beatles, que sigue un viaje surrealista en un submarino hacia Pepperland para salvarlo de los Blue Meanies</p>
+            <a href="#" class="btn btn-dark w-100 justify-content-center">Ver</a>
           </div>
-      </section>
+        </div>
+      </div>
       <hr>
 
     </main>
 
         <footer>
-            <nav>
-              <div>
-              <ul>
-                <li><a href="">Terminos y Condiciones</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Administrador de Discos</a></li>
-              </ul>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center gap-3">
+                  <li class="nav-item border border-1 rounded">
+                    <a class="nav-link" href="#">Terminos y Condiciones</a>
+                  </li>
+                  <li class="nav-item border border-1 rounded">
+                    <a class="nav-link" href="./pages/iniciosesion.html">FAQs</a>
+                  </li>
+                  <li class="nav-item border border-1 rounded">
+                    <a class="nav-link" href="./pages/registro.html">Administrador de Discos</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            </nav>            
+          </nav>
         </footer>
         
     </body>
