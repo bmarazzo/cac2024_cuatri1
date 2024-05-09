@@ -6,56 +6,85 @@
         <title>Mundo Beatlina | Albumes y mas de los Beatles</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
     </head>
     
-    <body>
+    <body class="bg-secondary text-white">
 
-        <header class="header">
-          <nav class="nav_header">
-              <a href="../index.html">
+      <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">                
                 <i class="fas fa-headphones-alt"></i>
-                <span>Mundo Beatlina</span>
-              </a>
-
-                <ul class="lista_nav">                   
-                  <li class="lista_items"><a class="link_nav" href="#TOPS">Los TOP</a></li>
-                  <li class="lista_items"><a class="link_nav" href="./iniciosesion.html">Entrar</a></li>
-                  <li class="lista_items"><a class="link_nav" href="./registro.html">Registrate</a></li>
-                 </ul>
-            </nav>
-          </header>
-          
-          <main class="contenedor_detalle">          
-
-            <div class="contenedor_general_detalle">             
-              <div class="texto_detalle">
-                <h1 class="tit_detalle">Please Please Me</h1>
-                <p><b>Please Please Me es el álbum debut de la banda</b>, lanzado el 22 de marzo de 1963 en el Reino Unido. Su publicación acompaña el inicio de la Beatlemanía.</b>
-                <p>El álbum contiene diez canciones grabadas el día 11 de febrero de 1963 en los estudios EMI de Abbey Road, durante una sesión de grabación de 585 minutos. <b>Contiene ocho canciones que fueron compuestas por John Lennon y Paul McCartney</b>, temprana evidencia de lo que la revista Rolling Stone denominó posteriormente como <i>la invención por parte de ellos de la idea de un grupo de música rock hecho a sí mismo, escribiendo sus propios éxitos y tocando sus propios instrumentos musicales</i>. Aunque la mayor parte de las canciones fueran cantadas por Lennon o McCartney, solos o en dúo, George Harrison participa en el coro y presta su voz para dos canciones, mientras que Ringo Starr es intérprete de una. Los catorce temas son típicos del repertorio que la banda tocaba durante años en clubes de Liverpool y Hamburgo. La cubierta está ilustrada con una fotografía de los cuatro en las escaleras de la sede de la compañía EMI en Londres, parodiada por el grupo seis años después.</p>
-                <p>Desde el lanzamiento de Please Please Me, los Beatles aumentaron su popularidad en todo el mundo, principalmente en el Reino Unido, donde <b>el álbum llegó al puesto número 1 el 11 de mayo de 1963, permaneciendo en ese puesto durante 30 semanas hasta el 7 de diciembre de 1963</b>, fecha en la que fue sustituido en la primera posición por el segundo LP del grupo, With the Beatles.</p>
-              </div>
-          
-              <div class="video_detalle">
-                <iframe src="https://www.youtube.com/embed/UxL87Tfy7XY" frameborder="0" allowfullscreen></iframe>
-              </div>
-
+                <span>Mundo Beatlina</span>                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end gap-3">
+                <li class="nav-item border border-1 rounded">
+                  <a class="nav-link" href="#">Los TOP</a>
+                </li>
+                <li class="nav-item border border-1 rounded">
+                  <a class="nav-link" href="./pages/iniciosesion.html">Entrar</a>
+                </li>
+                <li class="nav-item border border-1 rounded">
+                  <a class="nav-link" href="./pages/registro.html">Registrarse</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+        </header>
+
+          <main>              
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 text-center">
+                    <h1>Please Please Me</h1>
+                    <p><b>Please Please Me es el álbum debut de la banda</b>, lanzado el 22 de marzo de 1963 en el Reino Unido. Su publicación acompaña el inicio de la Beatlemanía.</p>
+                    <p>El álbum contiene diez canciones grabadas el día 11 de febrero de 1963 en los estudios EMI de Abbey Road, durante una sesión de grabación de 585 minutos. <b>Contiene ocho canciones que fueron compuestas por John Lennon y Paul McCartney</b>, temprana evidencia de lo que la revista Rolling Stone denominó posteriormente como <i>la invención por parte de ellos de la idea de un grupo de música rock hecho a sí mismo, escribiendo sus propios éxitos y tocando sus propios instrumentos musicales</i>. Aunque la mayor parte de las canciones fueran cantadas por Lennon o McCartney, solos o en dúo, George Harrison participa en el coro y presta su voz para dos canciones, mientras que Ringo Starr es intérprete de una. Los catorce temas son típicos del repertorio que la banda tocaba durante años en clubes de Liverpool y Hamburgo. La cubierta está ilustrada con una fotografía de los cuatro en las escaleras de la sede de la compañía EMI en Londres, parodiada por el grupo seis años después.</p>
+                    <p>Desde el lanzamiento de Please Please Me, los Beatles aumentaron su popularidad en todo el mundo, principalmente en el Reino Unido, donde <b>el álbum llegó al puesto número 1 el 11 de mayo de 1963, permaneciendo en ese puesto durante 30 semanas hasta el 7 de diciembre de 1963</b>, fecha en la que fue sustituido en la primera posición por el segundo LP del grupo, With the Beatles.</p>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <iframe class="video" src="https://www.youtube.com/embed/UxL87Tfy7XY" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              
+
             </main>
     
             <hr>
 
-        <footer>
-            <nav>
-              <div>
-              <ul>
-                <li><a href="">Terminos y Condiciones</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Administrador de Discos</a></li>
-              </ul>
-            </div>
-            </nav>            
-        </footer>
-        
-    </body>
-</html>
+            <footer>
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center gap-3">
+                      <li class="nav-item border border-1 rounded">
+                        <a class="nav-link" href="#">Terminos y Condiciones</a>
+                      </li>
+                      <li class="nav-item border border-1 rounded">
+                        <a class="nav-link" href="./pages/iniciosesion.html">FAQs</a>
+                      </li>
+                      <li class="nav-item border border-1 rounded">
+                        <a class="nav-link" href="./pages/registro.html">Administrador de Discos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </footer>
+            <script src="./js/bootstrap.min.js"></script>        
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+            AOS.init();
+            </script>
+        </body>
+    </html>

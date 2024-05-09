@@ -1,0 +1,39 @@
+/* para diseñar los estilos propios*/
+
+
+/*imagenes de la pagina principal*/
+
+.img-fluid {
+    max-width: 200px;
+    height: auto;
+}
+
+.imagen_fondo_principal{
+    background:linear-gradient(to right top, #0a0a0a8a, #3938388a), url(../assets/img/adult-3086307_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*imagenes de la pagina registro*/
+
+.imagen_fondo_registro{
+    background:linear-gradient(to right top, #0a0a0a8a, #3938388a), url(../assets/img/fondo_registro.png);
+    max-width: auto;
+}
+
+/*ancho contenedor de pagina registro*/
+
+.ancho_registro {
+    max-width: 400px;
+}
+
+/*estilo video de pagina de detalle*/
+
+.video{
+    width: 100%;
+    height: 400px;
+}

@@ -6,45 +6,90 @@
         <title>Mundo Beatlina | Albumes y mas de los Beatles</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
+
     </head>
-    
-    <body>
 
-        <header class="header">
-          <nav class="nav_header">
+    <body class="bg-secondary text-white">
 
-              <a href="../index.html">
+      <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">                
                 <i class="fas fa-headphones-alt"></i>
-                <span>Mundo Beatlina</span>
-              </a>
-
-                <ul class="lista_nav">                   
-                  <li class="lista_items"><a class="link_nav" href="#TOPS">Los TOP</a></li>
-                  <li class="lista_items"><a class="link_nav" href="#">Entrar</a></li>
-                  <li class="lista_items"><a class="link_nav" href="./registro.html">Registrate</a></li>
-                 </ul>
-            </nav>
-       
-          </header>
-
-        <main> 
-             <p>aca debo construir la pagina de inicio de sesion.</p>    
-          
-
-        </main>
-
-        <footer>
-          <nav>
-            <div>
-            <ul>
-              <li><a href="">Terminos y Condiciones</a></li>
-              <li><a href="">FAQs</a></li>
-              <li><a href="">Administrador de Discos</a></li>
-            </ul>
+                <span>Mundo Beatlina</span>                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end gap-3">
+                <li class="nav-item border border-1 rounded">
+                  <a class="nav-link" href="#">Los TOP</a>
+                </li>
+                <li class="nav-item border border-1 rounded">
+                  <a class="nav-link" href="./pages/iniciosesion.html">Entrar</a>
+                </li>
+                <li class="nav-item border border-1 rounded">
+                  <a class="nav-link" href="./pages/registro.html">Registrarse</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          </nav>            
-      </footer>
-      
-  </body>
+        </nav>
+        </header>
+
+  <main class="container align-items-center imagen_fondo_registro mt-4">
+    <div class="ancho_registro mx-auto" >
+
+    <section class="p-2">
+      <h1 class="text-center ">Inciar sesión</h1>
+
+    <form>
+      <div class="form-floating mb-3 text-dark">
+        <input type="password" class="form-control" id="floatingusuario" placeholder="usuario" name="usuario">
+        <label for="usuario">usuario</label>
+      </div>
+      <div class="form-floating mb-3 text-dark">
+        <input type="password" class="form-control" id="password" placeholder="password">
+        <label for="password">password</label>
+      </div>
+     
+    </form>
+  </section>
+</div>
+</main>
+
+  <footer>
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center gap-3">
+            <li class="nav-item border border-1 rounded">
+              <a class="nav-link" href="#">Terminos y Condiciones</a>
+            </li>
+            <li class="nav-item border border-1 rounded">
+              <a class="nav-link" href="./pages/iniciosesion.html">FAQs</a>
+            </li>
+            <li class="nav-item border border-1 rounded">
+              <a class="nav-link" href="./pages/registro.html">Administrador de Discos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
