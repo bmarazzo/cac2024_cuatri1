@@ -32,7 +32,7 @@
                   <a class="nav-link" href="./pages/iniciosesion.html">Entrar</a>
                 </li>
                 <li class="nav-item border border-1 rounded">
-                  <a class="nav-link" href="./pages/registro.html">Registrarse</a>
+                  <a class="nav-link" href="./registro.html">Registrarse</a>
                 </li>
               </ul>
             </div>
@@ -46,19 +46,106 @@
     <section class="p-2">
       <h1 class="text-center ">Inciar sesión</h1>
 
-    <form>
-      <div class="form-floating mb-3 text-dark">
-        <input type="password" class="form-control" id="floatingusuario" placeholder="usuario" name="usuario">
-        <label for="usuario">usuario</label>
-      </div>
-      <div class="form-floating mb-3 text-dark">
-        <input type="password" class="form-control" id="password" placeholder="password">
-        <label for="password">password</label>
-      </div>
-     
-    </form>
+      <form>
+        <div class="form-floating mb-3 text-dark">
+          <input type="text" class="form-control" id="floatingusuario" placeholder="usuario" name="usuario" required>
+          <label for="floatingusuario">Usuario</label>
+        </div>
+        <div class="form-floating mb-3 text-dark">
+          <input type="password" class="form-control" id="floatingpassword" placeholder="password" name="password" required>
+          <label for="floatingpassword">Contraseña</label>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn border border-1 rounded btn-dark">Ingresar</button>
+        </div>
+      </form>
+      
   </section>
 </div>
+
+<!-- copiado de la pr JS -->
+
+<p>  
+  <button class="btn btn-dark animate-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    No mires el clima, escuchate una BeatleSONG
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <div class="card-body text-dark">
+      <p><span>Ciudad:</span> <span id="city"></span></p>
+      <p><span>Temperatura:</span> <span id="temperature"></span> °C</p>
+      <p><span>Clima:</span> <span id="weather"></span> <img id="weatherIcon" src="" alt=""></p>
+      <p><span>Humedad:</span> <span id="humidity"></span>%</p>
+      <p><span>Velocidad del Viento:</span> <span id="windSpeed"></span> m/s</p>
+    </div>data/2.5/weather
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+          // Función para obtener datos del clima
+  async function fetchWeather(city) {
+      // Definir la URL de la API del clima
+      const url = "https://api.openweathermap.org/data/2.5/weather";
+      // Clave de API para acceder a la API del clima
+      const apiKey = "21e3195e9bfeb6879e788ec605b09ab0";
+      // Unidades de medida para la temperatura (en este caso, Celsius)
+      const units = "metric";
+      // Idioma para los datos de respuesta (en este caso, español)
+      const lang = "es";
+
+      // Realizar una solicitud GET a la API del clima
+      const response = await fetch(`${url}?q=${city}&appid=${apiKey}&units=${units}&lang=${lang}`);
+      // Convertir la respuesta a formato JSON
+      const data = await response.json();
+      // Devolver los datos del clima
+      return data;
+  }
+
+  // Función para actualizar la tarjeta con los datos del clima
+  async function updateWeatherCard(city) {
+      // Obtener los datos del clima para la ciudad especificada
+      const weatherData = await fetchWeather(city);
+      console.log(weatherData);
+      // Actualizar el elemento HTML con el nombre de la ciudad
+      document.getElementById("city").textContent = weatherData.name;
+      // Actualizar el elemento HTML con la temperatura
+      document.getElementById("temperature").textContent = weatherData.main.temp;
+      // Actualizar el elemento HTML con la descripción del clima
+      document.getElementById("weather").textContent = weatherData.weather[0].description;
+      // Actualizar el elemento HTML con la humedad
+      document.getElementById("humidity").textContent = weatherData.main.humidity;
+      // Actualizar el elemento HTML con la velocidad del viento
+      document.getElementById("windSpeed").textContent = weatherData.wind.speed;
+      // Obtener el código del icono del clima
+      const iconCode = weatherData.weather[0].icon;
+      // Construir la URL del icono del clima
+      const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
+      // Actualizar el elemento HTML con el ícono del clima
+      document.getElementById("weatherIcon").src = iconUrl;
+      // Establecer el atributo "alt" del ícono del clima con la descripción del clima
+      document.getElementById("weatherIcon").alt = weatherData.weather[0].description;
+  }
+
+  // Llamar a la función updateWeatherCard con la ciudad de "Buenos Aires"
+  updateWeatherCard("Buenos Aires");
+
+  /*
+      async es una palabra clave que se utiliza para definir funciones asincrónicas. Las funciones asincrónicas retornan una promesa y permiten utilizar la palabra clave await dentro de ellas.
+      await es una palabra clave que se utiliza para esperar la resolución de una promesa. En el contexto de una función asincrónica, await pausa la ejecución de la función hasta que la promesa se resuelva y devuelve el resultado.
+      En el código proporcionado, la función fetchWeather es asincrónica porque realiza una solicitud a la API del clima, que es una operación asíncrona. Al utilizar await junto con fetch, la función espera a que la solicitud se complete y devuelve los datos del clima.
+      En la función updateWeatherCard, utilizamos await al llamar a fetchWeather para obtener los datos del clima para una ciudad específica. Esto asegura que la función espere a que se completen las solicitudes antes de actualizar la tarjeta con los datos del clima.
+  */
+</script>
+
+
+
+
+
 </main>
 
   <footer>
