@@ -38,6 +38,13 @@
     height: 400px;
 }
 
+.precacucion {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: red;
+  padding-top: 20px;
+}
 
 @keyframes moveButton {
     0%, 100% {
