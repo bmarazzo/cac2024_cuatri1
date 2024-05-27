@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const form = document.getElementById("formularioInicio");
     console.log(form);
     form.addEventListener("submit", (event)=>{
-        // Evitar que se envíe el formulario automáticamente
         event.preventDefault();
 
         resetErrorMessages();

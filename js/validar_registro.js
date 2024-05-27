@@ -13,9 +13,8 @@ function displayErrorMessage(elementId, message) {
 }
 
 function isValidEmail(email) {
-    // Utilizamos una expresión regular para validar el formato del correo electrónico
+    // regex
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    // estructura texto@texto.texto
     return emailPattern.test(email);
 }
 
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("formularioRegistro");
     console.log(form);
     form.addEventListener("submit", (event) => {
-        // Evitar que se envíe el formulario automáticamente
         event.preventDefault();
 
         resetErrorMessages();
@@ -33,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let nombre = document.getElementById("nombre").value.trim();
         let apellido = document.getElementById("apellido").value.trim();
         let email = document.getElementById("email").value.trim();
-        let fechaNacimiento = document.getElementById("fechaNacimiento").value.trim();
+        //let fechaNacimiento = document.getElementById("fechaNacimiento").value.trim();
         let username = document.getElementById("username").value.trim();
         let password = document.getElementById("password").value.trim();
         let password2 = document.getElementById("password2").value.trim();
